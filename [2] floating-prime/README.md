@@ -1,4 +1,4 @@
-# Floating Prime :cyclone:
+# Floating Prime :stars:
 
 ## Problem :question:
 นิยาม Floating Prime (แบบขําๆ): สําหรับตัวเลขทศนิยมที่มีค่าระหว่าง 1.0 - 10.0 ใดๆ จะเป็น Floating Prime
