@@ -75,6 +75,7 @@ func getListToDisplay(problemList []string, displayList *[]string, guessNumber s
 	return score
 }
 
+// print the buetiful list
 func printList(list []string) {
 	fmt.Println(strings.Join(list, " "))
 }
