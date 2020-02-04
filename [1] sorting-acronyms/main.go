@@ -29,6 +29,7 @@ func main() {
 		result = append(result, acronym)
 	}
 
+	// sort by length of acronyms or if equal it will sort by Alphabetical order
 	sort.SliceStable(result, func(i, j int) bool {
 		return len(result[i]) > len(result[j]) || (len(result[i]) == len(result[j])) && (result[i] < result[j])
 	})
@@ -39,12 +40,20 @@ func main() {
 
 }
 
+/*
+	getAcronyms
+		require line of string, full name
+		and return acronym name
+*/
 func getAcronyms(line string) string {
 	var char []rune
 
+	// cut dobule space between word
 	cutSpace := strings.Join(strings.Fields(strings.TrimSpace(line)), " ")
+	// split the string into the list of word
 	words := strings.Split(cutSpace, " ")
 
+	// loop for check uppercase
 	for _, word := range words {
 		firstChar := []rune(word)[0]
 		if unicode.IsUpper(firstChar) {
