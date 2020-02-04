@@ -11,3 +11,8 @@ This repo for The Internship Program Developer Exam
 ## Language :hammer:
 - golang
 - javascript
+
+## About me :blush:
+- name :boy: : ` ขาญศักดิ์ แดงมณี ` 
+- email :envelope: : `atoseka@gmail.com`
+- phone :telephone_receiver: : `090 956 7415`
