@@ -4,7 +4,8 @@
   "description": "basic web crawler",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start1": "node main-1.js",
+    "start2": "node main-2.js"
   },
   "keywords": [
     "node.js",
