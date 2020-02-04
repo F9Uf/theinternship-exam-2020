@@ -18,6 +18,8 @@ func main() {
 	if list := strToList(problem); len(list) == numberOfProblem {
 		displayList := genDisplayList(numberOfProblem)
 		score := 0
+
+		// loop for get the input number that user guess
 		for i := 0; i < numberForGuess; i++ {
 			printList(displayList)
 			fmt.Printf("guess >> ")
@@ -34,11 +36,13 @@ func main() {
 
 }
 
+// strToList for split the string by space to the list
 func strToList(str string) []string {
 	str = strings.Trim(str, " \r\n")
 	return strings.Split(str, " ")
 }
 
+// generate list for display that consist of "_"
 func genDisplayList(numberOfProblem int) []string {
 	var result []string
 	for i := 0; i < numberOfProblem; i++ {
@@ -47,6 +51,11 @@ func genDisplayList(numberOfProblem int) []string {
 	return result
 }
 
+/*
+	check the number that user guess is in the problem list?
+	calculate score if the right guess
+	but it's wil not calculate the duplicate answer
+*/
 func getListToDisplay(problemList []string, displayList *[]string, guessNumber string) int {
 	score := 0
 	isWrong := true
