@@ -1,6 +1,7 @@
 const axios = require('axios')
 const cheerio = require('cheerio')
 
+// fetch response from url
 const fetchHTML = async (url) => {
     const res = await axios.get(url)
     return res.data
@@ -11,6 +12,7 @@ const getResults = async (url) => {
     const $ = cheerio.load(data)
     const companies = []
 
+    // select div that has "partner" class and loop for each children node
     $("div.partner").each((i, e) => {
         const logoBoxNode = e.firstChild
         const linkLogoNode = logoBoxNode.lastChild
@@ -29,6 +31,7 @@ const getResults = async (url) => {
         })
     })
 
+    // return the companies array that is sorted by description length
     return companies.sort((a, b) => {
         return a.description.length - b.description.length
     })
