@@ -7,3 +7,7 @@ This repo for The Internship Program Developer Exam
 - [[2] floating-prime](/%5B2%5D%20floating-prime)
 - [[3] digit-hangman](/%5B3%5D%20digit-hangman)
 - [[4] basic-web-crawler](/%5B4%5D%20basic-web-crawler)
+
+## Language :hammer:
+- golang
+- javascript
