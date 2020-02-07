@@ -18,12 +18,12 @@
 ### Test Case
 | Input                        | Output |
 |------------------------------|--------|
-| 5                            | TUSOA  |
-| the United States of America | TUSA   |
-| The United States of America | CMU    |
-| Carnegie Mellon University   | USA    |
-| The United States Of America | A      |
-| the united states of America |        |
+| 5 <br> the United States of America <br> The United States of America <br> Carnegie Mellon University <br> The United States Of America <br> the united states of America                         | TUSOA <br> TUSA <br> CMU <br> USA <br> A <br> <br> |
+  
+   
+     
+   
+  
 
 
 ## How to Run :confused:
@@ -32,4 +32,9 @@
 - Run this commad.
     ```
     $ go run main.go
+    ```
+    or
+    ```
+    $ ./main (for linux)
+    $ main.exe (for windows)
     ```

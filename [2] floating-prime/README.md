@@ -23,15 +23,17 @@
 ### Test Case
 | Input        | Output |
 |--------------|--------|
-| 1.43318374   | TRUE   |
-| 1.31234567   | TRUE   |
-| 1.6172746483 | FALSE  |
-| 0.0          |        |
-
+| 1.43318374 <br> 1.31234567 <br> 1.6172746483 <br> 0.0  | TRUE <br> TRUE <br> FALSE <br> <br> |
+   
 ## How to Run :confused:
 - Clone or Download file from This repo.
 - Open **"[2] floating-prime"** folder.
 - Run this commad.
     ```
     $ go run main.go
+    ```
+    or
+    ```
+    $ ./main (for linux)
+    $ main.exe (for windows)
     ```

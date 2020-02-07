@@ -28,3 +28,8 @@
     ```
     $ go run main.go
     ```
+    or
+    ```
+    $ ./main (for linux)
+    $ main.exe (for windows)
+    ```
