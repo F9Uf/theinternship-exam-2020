@@ -21,14 +21,18 @@ func main() {
 		var result string
 		result = "FALSE"
 
-		// loop check prime of number until found the prime number
-		// Loop sinc one floating point to 3 floating point
-		for i := 2; i <= 4; i++ {
-			substr := number[0:i]
-			if x, err := strconv.Atoi(substr); err == nil {
-				if isPrime(x) {
-					result = "TRUE"
-					break
+		if len(number) < 4 {
+			result = "FALSE"
+		} else {
+			// loop check prime of number until found the prime number
+			// Loop sinc one floating point to 3 floating point
+			for i := 2; i <= 4; i++ {
+				substr := number[0:i]
+				if x, err := strconv.Atoi(substr); err == nil {
+					if isPrime(x) {
+						result = "TRUE"
+						break
+					}
 				}
 			}
 		}
